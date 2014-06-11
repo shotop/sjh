@@ -5,6 +5,12 @@ Sjh::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get 'about' => 'about#index'
+  get 'blog' => 'blog#index'
+  get 'translations' => 'translations#index'
+  get 'music' => 'music#index'
+  get 'projects' => 'projects#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
