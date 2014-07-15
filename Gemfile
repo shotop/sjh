@@ -5,6 +5,7 @@ gem 'rails', '4.0.3'
 
 gem 'rspec', '~> 3.0.0'
 gem 'rspec-rails'
+gem 'pry'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -33,6 +34,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'webrick', '~> 1.3.1'
 end
 
 # Use ActiveModel has_secure_password
