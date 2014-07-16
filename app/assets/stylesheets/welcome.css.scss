@@ -2,21 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.navbar-form input, .form-inline input {
-  width:auto;
+#headerwrap {
+  background: url("pushkar.jpg") no-repeat center top;
+  margin-top: -10px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 355px;
+  width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-header {
-  height:280px;
-  background-image:url('pushkar.jpg');
-  /*background-position: center;*/
-  /*background-size: 1575px 375px;
-  background-repeat: no-repeat;*/
+#headerwrap h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 70px;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:10;
+#headerwrap h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
