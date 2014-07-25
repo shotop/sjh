@@ -7,34 +7,80 @@
     </div><!-- container -->
   </div><!-- headerwrap -->
 
-  <div class="container w">
-    <div class="row centered">
-      <br><br>
-      <div class="col-lg-3">
-        <i class="fa fa-comment"></i>
-        <a href="<%= blog_path %>"><h4>BLOG</h4></a>
-        <p>Life, technology, travel.  Find thoughts on these topics and more here. </p>
-      </div><!-- col-lg-4 -->
+  <div id="blog_wrap">
+    <div class="container w">
+      <div class="row centered">
+        <br><br>
+        <div class="col-lg-3">
+          <div class="panel panel-info">
+            <div class="panel-heading"><i class="fa fa-comment"><a href="<%= blog_path %>"><h4>BLOG</h4></a></i>
+            </div>
+            <div class="panel-body">
+              <p>Life, technology, travel.  Find thoughts on these topics and more here. </p>
+            </div>
+          </div>
+        </div>
+       <br>
+      <br>
+    </div><!-- container -->
+  <div>
 
-      <div class="col-lg-3">
-        <i class="fa fa-language"></i>
-        <a href="<%= translations_path %>"><h4>TRANSLATIONS</h4></a>
-        <p>Russian to English translations of news articles and other interesting content.</p>
-      </div><!-- col-lg-4 -->
 
-      <div class="col-lg-3">
-        <i class="fa fa-music"></i>
-        <a href="<%= music_path %>"><h4>MUSIC</h4></a>
-        <p>I started my journey through Jazz guitar a couple years ago.  Hear some of the stuff I've been working on lately.</p>
-      </div><!-- col-lg-4 -->
+  <div id="translations_wrap">
+    <div class="container w">
+      <div class="row centered">
+        <br><br>
+        <div class="col-lg-3">
+          <div class="panel panel-info">
+            <div class="panel-heading"><i class="fa fa-language"><a href="<%= translations_path %>"><h4>TRANSLATIONS</h4></a></i>
+            </div>
+            <div class="panel-body">
+              <p>Russian to English translations of news articles and other interesting content.</p>
+            </div>
+          </div>
+        </div>
+      <br>
+      <br>
+    </div><!-- container -->
+  <div>
 
-      <div class="col-lg-3">
-        <i class="fa fa-flask"></i>
-        <a href="<%= projects_path %>"><h4>PROJECTS</h4></a>
-        <p>Video games, tools, random things I've been working on.</p>
-      </div><!-- col-lg-4 -->
-    </div><!-- row -->
-    <br>
-    <br>
-  </div><!-- container -->
+  <div id="music_wrap">
+    <div class="container w">
+      <div class="row centered">
+        <br><br>
+        <div class="col-lg-3">
+          <div class="panel panel-info">
+            <div class="panel-heading"><i class="fa fa-music">
+              <a href="<%= music_path %>"><h4>MUSIC</h4></a></i>
+            </div>
+            <div class="panel-body">
+              <p>I started my journey through Jazz guitar a couple years ago.  Hear some of the stuff I've been working on lately.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+      <br>
+    </div><!-- container -->
+  <div>
+
+
+  <div id="projects_wrap">
+    <div class="container w">
+      <div class="row centered">
+        <br><br>
+        <div class="col-lg-3">
+          <div class="panel panel-info">
+            <div class="panel-heading"><i class="fa fa-flask">
+          <a href="<%= projects_path %>"><h4>PROJECTS</h4></a></i>
+            </div>
+            <div class="panel-body">
+              <p>Video games, tools, random things I've been working on.</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- row -->
+      <br>
+      <br>
+    </div><!-- container -->
+  <div>
 

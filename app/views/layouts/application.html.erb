@@ -5,6 +5,8 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -13,7 +15,7 @@
     <div class="container">
       <a class="navbar-brand" href="<%= root_path %>">SHOT<i class="fa fa-globe"></i>P.COM</a>
       <ul class="nav navbar-nav pull-right">
-        <li class="active"><a href="<%= about_path %>">ABOUT</a></li>
+        <li><a href="<%= about_path %>">ABOUT</a></li>
         <li><a href="<%= blog_path %>">BLOG</a></li>
         <li><a href="<%= translations_path %>">TRANSLATIONS</a></li>
         <li><a href="<%= music_path %>">MUSIC</a></li>
