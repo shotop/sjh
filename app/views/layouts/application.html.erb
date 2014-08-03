@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sjh</title>
+  <title>SamuelJamesHotop.com</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -11,23 +11,43 @@
 </head>
 
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-inverse">
     <div class="container">
-      <a class="navbar-brand" href="<%= root_path %>">SHOT<i class="fa fa-globe"></i>P.COM</a>
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="<%= about_path %>">ABOUT</a></li>
-        <li><a href="<%= blog_path %>">BLOG</a></li>
-        <li><a href="<%= translations_path %>">TRANSLATIONS</a></li>
-        <li><a href="<%= music_path %>">MUSIC</a></li>
-        <li><a href="<%= projects_path %>">PROJECTS</a></li>
-        <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
-      </ul>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<%= root_path %>">SHOT<i class="fa fa-globe"></i>P.COM</a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "BLOG", blog_path %></li>
+          <li><%= link_to "TRANSLATIONS", translations_path %></li>
+          <li><%= link_to "MUSIC", music_path %></li>
+          <li><%= link_to "PROJECTS", projects_path %></li>
+          <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="https://www.facebook.com/sam.hotop"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/pub/samuel-hotop/8/57b/256"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="https://github.com/shotop"><i class="fa fa-github-alt"></i></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
 
 <%= yield %>
 
-
+  <!-- FOOTER -->
+  <div id="footer">
+    <div class="container">
+      <div class="row centered">
+        <a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
+        <h2>I AM THE Footer</h2>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- Footer -->
 </body>
 </html>
