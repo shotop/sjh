@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li >a:hover {
-  color: #7094FF;
+  color: #ff7878;
 }
 
 .navbar-inverse .navbar-brand {
@@ -36,7 +36,7 @@ body {
 }
 
 .navbar-inverse .navbar-brand i {
-  color: #7094FF;
+  color: #ff7878;
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -50,13 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
   background: #2d2d2d;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 #footer i {
   color: #bdbdbd;
   font-size: 30px;
-  padding: 20px;
+  margin-left: 220px;
 }
 
 #footer i:hover {
@@ -64,12 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer h2 {
-  color: #bdbdbd;
-  font-size: 30px;
-  padding: 20px;
-}
-
-#footer h2:hover {
   color: #ff7878;
+  font-size: 30px;
+  margin-left: 400px;
 }
-

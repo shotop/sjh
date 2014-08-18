@@ -14,71 +14,157 @@
         <div class="col-lg-12 col-lg-offset-4" id="profileInfo">
           <img class="img-circle" src="/assets/samprofilepic.jpeg" width="120" height="130" alt="Icon">
           <h4>Sam Hotop</h4>
-          <p>I'm glad <b>you</b> are here! I built this website as a platform through which to share my interests, passions, hobbies and ideas. I'm new to the dev side of software development, so if you have any feedback about the site's design or any bugs, please feel free to send me a message. I hope you find the content here fun and <b>engaging</b>.</p>
+          <p>I'm glad <b>you</b> are here! I built this website as a platform through which to share my interests, passions, hobbies and ideas. I'm new to the dev side of software development, so if you have any feedback about the site's design, any bugs, or would like to contact me for other reasons, please feel free to send me a message. I hope you find the content here fun and <b>engaging</b>.</p>
           <div class="col-lg-4 col-offset-4 contact-form well well-sm">
-            <form role="form">
-              <div class="form-group">
-                <label for="contactName">Name</label>
-                <input type="text" class="form-control" id="contactName" placeholder="Enter Name">
-              </div>
-              <div class="form-group">
-                <label for="contactEmail">Email Address</label>
-                <input type="email" class="form-control" id="contactEmail" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="contactMessage">Message</label>
-                <textarea class="form-control" rows="5" placeholder="Message for Sam"></textarea>
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+            <div class="container">
+              <%= simple_form_for @contact, :url => contacts_path, :html => {:class => 'form-horizontal' } do |f| %>
+                <div class="form-group">
+                  <label for="contactName">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="contactMessage">Message</label>
+                  <textarea class="form-control" rows="5" placeholder="Message for Sam"></textarea>
+                </div>
+                <div class="hidden">
+                  <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+                </div>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="blogwrap">
+  <div id="doWhat">
     <div class="container">
       <div class="row centered">
-        <div class="col-lg-12 col-lg-offset-2">
-          <i class="fa fa-comment"><h4><%= link_to "BLOG", blog_path %></h4></i>
-          <p>Life, technology, travel.  Find thoughts on these topics and more here. </p>
-        </div>
+        <h1>What I do for work</h1>
       </div>
     </div><!-- container -->
   </div>
 
-
-  <div id="translationswrap">
+  <div id="doThis">
     <div class="container">
-      <div class="row centered">
-        <div class="col-lg-12 col-lg-offset-2">
-          <i class="fa fa-language"><h4><%= link_to "TRANSLATIONS", translations_path %></h4></i>
-          <p>Russian to English translations of news articles and other interesting content.</p>
-        </div>
+      <div class="row centered" id="do_charts">
+        <div class="col-lg-3">
+          <canvas id="canvas" height="130" width="130"></canvas>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 70,
+                  color:"black"
+                },
+                {
+                  value : 30,
+                  color : "#ecf0f1"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+          </script>
+          <i class="fa fa-comment"><h3><%= link_to "BLOG", blog_path %></h3></i>
+          <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+        </div><!-- /col-lg-3 -->
+          <!-- Second Chart -->
+        <div class="col-lg-3">
+          <canvas id="canvas2" height="130" width="130"></canvas>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 90,
+                  color:"black"
+                },
+                {
+                  value : 10,
+                  color : "#ecf0f1"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+          </script>
+          <i class="fa fa-language"><h3><%= link_to "RUSSIAN TRANSLATIONS", translations_path %></h3></i>
+          <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+        </div><!-- /col-lg-3 -->
+
+        <!-- Third Chart -->
+        <div class="col-lg-3">
+          <canvas id="canvas3" height="130" width="130"></canvas>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 50,
+                  color:"black"
+                },
+                {
+                  value : 50,
+                  color : "#ecf0f1"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+          </script>
+          <i class="fa fa-music"><h3><%= link_to "MUSIC", music_path %></h3></i>
+          <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+        </div><!-- /col-lg-3 -->
+
+        <!-- Fourth Chart -->
+        <div class="col-lg-3">
+          <canvas id="canvas4" height="130" width="130"></canvas>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 80,
+                  color:"black"
+                },
+                {
+                  value : 20,
+                  color : "#ecf0f1"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+          </script>
+          <i class="fa fa-flask"><h3><%= link_to "TECHNOLOGY", projects_path %></h3></i>
+          <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+        </div><!-- /col-lg-3 -->
       </div>
     </div><!-- container -->
   </div>
 
-  <div id="musicwrap">
+  <div id="doHome">
     <div class="container">
       <div class="row centered">
-        <div class="col-lg-12 col-lg-offset-2">
-         <i class="fa fa-music"><h4><%= link_to "MUSIC", music_path %></h4></i>
-         <p>I started my journey through Jazz guitar a couple years ago.  Hear some of the stuff I've been working on lately.</p>
-        </div>
+        <h1>What I do at home</h1>
       </div>
     </div><!-- container -->
   </div>
 
-
-  <div id="projectswrap">
+  <div id="homeWrap">
     <div class="container">
       <div class="row centered">
-        <div class="col-lg-12 col-lg-offset-2">
-          <i class="fa fa-flask"><h4><%= link_to "PROJECTS", projects_path %></h4></i>
-          <p>Video games, tools, random things I've been working on.</p>
-        </div>
+        <p>Hang out with my beautiful wife, sometimes questionable puppy, and sweet guitar.</p>
+        <iframe src="//instagram.com/p/mazvWwq__6/embed/" width="412" height="510" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="//instagram.com/p/P3HpKMq_6o/embed/" width="412" height="510" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="//instagram.com/p/NmOrZRq_xO/embed/" width="412" height="510" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+
+  <div id="ottowrap">
+    <div class="container">
+      <div class="row centered">
+        <p>Otto says,<br>
+        Enjoy the rest of your <%= Time.now.strftime("%A") %>! </p>
+        <iframe src="//instagram.com/p/izwqEkq__Y/embed/" width="412" height="510" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
       </div>
     </div><!-- row -->
   </div><!-- container -->

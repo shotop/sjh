@@ -11,6 +11,8 @@ Sjh::Application.routes.draw do
   get 'music' => 'music#index'
   get 'projects' => 'projects#index'
 
+  resources "contacts", only: [:create]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
