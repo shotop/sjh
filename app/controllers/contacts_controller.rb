@@ -3,12 +3,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:error] = nil
-      flash.now[:notice] = 'Thank you for your message!'
-      redirect_to root_path
+      redirect_to(root_path, :notice => "Thank you for contacting me. I will reply shortly!")
     else
       flash.now[:error] = 'Cannot send message.'
-      redirect_to root_path
+      render :new
     end
   end
 end
