@@ -39,4 +39,6 @@ Sjh::Application.configure do
   authentication:       'plain',
   enable_starttls_auto: true
   }
+
+  config.assets.precompile += %w( *.css *.js *.woff *.eot *.svg *.ttf)
 end
