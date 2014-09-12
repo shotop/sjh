@@ -1,16 +1,30 @@
 <div id="post-show">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row centered">
+      <div class="col-sm-8 centered">
         <div id="posts">
+          <h1><%= @post.title %></h1>
           <p>
-            <strong>Title:</strong>
-            <%= @post.title %>
-          </p>
-          <p>
-            <strong>Body:</strong>
             <%= @post.body %>
           </p>
+          <h2>Comments</h2>
+          <div id="comments">
+            <% @post.comments.each do |comment| %>
+              <%= div_for comment do %>
+                <p>
+                  <strong>Posted <%= time_ago_in_words(comment.created_at) %></strong><br />
+                  <%= h(comment.body) %>
+                </p>
+              <% end %>
+            <% end %>
+          </div>
+
+          <%= form_for([@post, Comment.new]) do |f| %>
+            <p><%= f.label :body, "New Comment" %><br />
+               <%= f.text_area :body %>
+            </p>
+            <p><%= f.submit "Add Comment" %></p>
+          <% end %>
         </div>
       </div>
     </div>

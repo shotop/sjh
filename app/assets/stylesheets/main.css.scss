@@ -2,11 +2,12 @@ body {
   background-color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-  height: 100%
+  height: 100%;
 }
 
 html{
-  height: 100%
+  height: 100%;
+  background: transparent;
 }
 
 .navbar {
@@ -78,4 +79,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff7878;
   font-size: 30px;
   margin-left: 400px;
+}
+
+.alert {
+  margin-top: 80px;
 }

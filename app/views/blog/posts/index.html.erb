@@ -52,8 +52,17 @@
           </div>
         </div>
         <div class="well">
-          <h4>Side Widget Well</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+          <h4>Archive</h4>
+          <ul class="list-unstyled">
+            <% @posts.each do |post| %>
+              <li>
+                <%= link_to post.title, blog_post_path(post) %>
+                <div class="pull-right">
+                  <%= link_to post.created_at.strftime("%D"), blog_post_path(post) %>
+                </div>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>

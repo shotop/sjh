@@ -22,15 +22,22 @@
     background-size: cover;
 }
 
-#headerwrap i {
+#headerwrap button {
   font-family: 'Ubuntu';
   color: white;
-  margin-top: 250px;
+  font-size: 120px;
+  margin-top: 590px;
 }
+
+#headerwrap button:hover {
+  color: #ff7878;
+}
+
 
 #aboutwrap {
   background: #e0e0e0;
-  margin-top: -10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
@@ -49,7 +56,7 @@
 }
 
 #aboutwrap #profileInfo {
-  margin-top: 40px;
+  margin-top: 75px;
 }
 
 #aboutwrap p {
@@ -62,13 +69,13 @@
   margin-bottom: 80px;
 }
 
-#blogwrap {
-  background: #3498db;
-  margin-top: -10px;
+#homewrap {
+  background: brown;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 755px;
+  min-height: 955px;
+  margin-top: 100px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -82,152 +89,12 @@
     background-size: cover;
 }
 
-#blogwrap p {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  line-height: 65px;
-  color: white;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-  margin-top: 40px;
+#homewrap .well {
+  margin-top: 100px;
 }
 
-#blogwrap i {
-  font-size: 50px;
-  line-height: 65px;
-  color: white;
-  margin-top: 40px;
-}
-
-#blogwrap a {
-  font-size: 50px;
-  line-height: 65px;
-  color: white;
-  margin-top: 40px;
-}
-
-#blogwrap #bloggingImg {
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
-
-
-#translationswrap {
-  background: #2d2d2d;
-  margin-top: -10px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 555px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#translationswrap i {
-  font-size: 50px;
-  line-height: 65px;
-  color: #e0e0e0;
-  margin-top: 60px;
-}
-
-#translationswrap a {
-  font-size: 50px;
-  line-height: 65px;
-  color: #e0e0e0;
-  margin-top: 60px;
-  font-family: 'Ubuntu';
-}
-
-#translationswrap .well {
-  margin-top: 60px;
-}
-
-#translation_description p {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+#homewrap p {
   font-size: 20px;
-  color: black;
-}
-
-
-#musicwrap {
-  background: #ebebeb;
-  margin-top: -10px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 455px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#musicwrap p {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  line-height: 65px;
-  color:black;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-}
-
-#musicwrap i {
-  font-size: 50px;
-  line-height: 65px;
-  color:black;
-  margin-top: 40px;
-}
-
-#projectswrap {
-  background: #1abc9c;
-  margin-top: -10px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 455px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#projectswrap p {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  line-height: 65px;
-  color:white;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-}
-
-#projectswrap i {
-  font-size: 50px;
-  line-height: 65px;
-  color:white;
-  margin-top: 40px;
 }
 
 #ottowrap {
@@ -259,11 +126,10 @@
 
 #doWhat {
   background: #1abc9c;
-  margin-top: -10px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 155px;
+  min-height: 855px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -277,81 +143,16 @@
     background-size: cover;
 }
 
-#doWhat h1 {
+#crisscross-content {
+  margin-top: 130px;
+}
+
+#doWhat a {
+  font-size: 35px;
   color: white;
-  padding-top: 20px;
-  font-size: 100px;
 }
 
-#do_charts {
-  margin-top: 60px;
-  margin-bottom: 60px;
+#doWhat i {
+  font-size: 80px;
 }
-
-#do_charts h3 {
-  font-size: 30px;
-}
-
-#do_charts i {
-  font-size: 40px;
-}
-
-#doHome {
-  background: #1abc9c;
-  margin-top: -10px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 155px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#doHome h1 {
-  color: white;
-  padding-top: 20px;
-  font-size: 100px;
-}
-
-.content_list {
-  margin-top: 40px;
-  margin-bottom: 140px;
-}
-
-.panel {
-  height: 400px;
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  line-height: 65px;
-  margin-top: 40px;
-}
-
-.tilt {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-
-.tilt:hover {
-  -webkit-transform: rotate(-365deg);
-     -moz-transform: rotate(-365deg);
-       -o-transform: rotate(-365deg);
-      -ms-transform: rotate(-365deg);
-          transform: rotate(-365deg);
-}
-
-
-
-
 

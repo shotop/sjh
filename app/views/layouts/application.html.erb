@@ -8,6 +8,7 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ruslan+Display' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -15,10 +16,9 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-      <%= render 'shared/flash_message' if !flash.empty? %>
+      <%= render 'shared/flash_messages', flash: flash %>
       <%= yield %>
     </main>
-
     <footer>
       <%= render 'layouts/footer' %>
     </footer>
