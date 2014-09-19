@@ -3,6 +3,9 @@
     <div class="row">
       <div class="col-sm-2">
         <img class="img-circle" src="/assets/samprofilepic.jpeg" width="110" height="120" alt="Sam Image">
+        <p>Husband, Father, Software Engineer<br>
+           Linguist, Musician
+        </p>
       </div>
       <div class="col-sm-10">
         <div id="posts">
@@ -16,35 +19,30 @@
           </p>
           <h2>Comments</h2>
           <div id="comments">
-            <% @post.comments.each do |comment| %>
-              <%= div_for comment do %>
-                <p>
-                  <strong>Posted <%= time_ago_in_words(comment.created_at) %> ago</strong><br />
-                  <%= h(comment.body) %>
-                </p>
-              <% end %>
-            <% end %>
+            <%= render :partial => @post.comments.reverse %>
           </div>
 
-          <%= form_for ([:blog, @post, Comment.new]) do |f| %>
-            <p>Leave A Reply</p>
-            <p>Your email address will not be published. Required fields are marked *</p>
-            <br>
-            <br>
-            <p><%= f.label "Enter Name *" %>
-               <%= f.text_field :guest_name %>
-            </p>
-            <br>
-            <p><%= f.label "Enter Email *" %>
-               <%= f.text_field :guest_email %>
-            </p>
-            <br>
-            <p><%= f.label "Comment" %>
-               <%= f.text_area(:body, size: "80x6") %>
-            </p>
-            <br>
-            <p><%= f.submit "Post Comment" %></p>
-          <% end %>
+          <div id="replies">
+            <%= form_for ([:blog, @post, Comment.new]), remote: true do |f| %>
+              <h2>Leave A Reply</h2>
+              <p>Your email address will not be published. Required fields are marked *</p>
+              <br>
+              <br>
+              <p><%= f.label "Enter Name *" %>
+                 <%= f.text_field :guest_name %>
+              </p>
+              <br>
+              <p><%= f.label "Enter Email *" %>
+                 <%= f.text_field :guest_email %>
+              </p>
+              <br>
+              <p><%= f.label "Comment" %>
+                 <%= f.text_area(:body, size: "80x6") %>
+              </p>
+              <br>
+              <p><%= f.submit "Post Comment" %></p>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

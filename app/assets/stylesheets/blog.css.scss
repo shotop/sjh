@@ -16,6 +16,19 @@
   border-bottom: 2px solid black;
 }
 
+#replies p {
+  font-family: 'Ubuntu';
+  font-size: 18px;
+}
+
+#comments div {
+  background-color: #e0e0e0;
+}
+
+#comments div p {
+  color: blue;
+}
+
 
 #new-post {
   margin-top: 100px;
