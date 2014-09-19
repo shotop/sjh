@@ -22,10 +22,8 @@ class Blog::CommentsController < ApplicationController
     respond_to do |format|
       if @comment.save
         format.html { redirect_to blog_post_path(@post), notice: 'Comment was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @comment }
       else
-        format.html { render action: 'new' }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
+        format.html { redirect_to blog_post_path(@post) }
       end
     end
   end
@@ -34,10 +32,8 @@ class Blog::CommentsController < ApplicationController
     respond_to do |format|
       if @comment.update(comment_params)
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -46,7 +42,6 @@ class Blog::CommentsController < ApplicationController
     @comment.destroy
     respond_to do |format|
       format.html { redirect_to comments_url }
-      format.json { head :no_content }
     end
   end
 
@@ -56,6 +51,6 @@ class Blog::CommentsController < ApplicationController
     end
 
     def comment_params
-      params.require(:comment).permit(:post_id, :body)
+      params.require(:comment).permit(:post_id, :body, :guest_name, :guest_email)
     end
 end
