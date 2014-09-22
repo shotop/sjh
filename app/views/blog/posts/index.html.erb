@@ -5,8 +5,16 @@
       <div class="col-lg-9">
         <div id="posts">
           <% @posts.each do |post| %>
-            <h3><%= link_to post.title, blog_post_path(post) %></h3>
-            <%= post.body %>
+            <h2><%= link_to post.created_at.strftime("%D") %></h2>
+            <h1><%= link_to post.title, blog_post_path(post) %></h1>
+            <p><%= post.body %></p>
+            <div id="read-more-link">
+              <p><%= link_to "Read More...", blog_post_path(post) %></p>
+            </div>
+            <footer class="post-footer">
+              <div class="post-actions">
+              </div>
+            </footer>
           <% end %>
         </div>
       </div>

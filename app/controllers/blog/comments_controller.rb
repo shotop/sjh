@@ -24,7 +24,7 @@ class Blog::CommentsController < ApplicationController
         format.html { redirect_to blog_post_path(@post), notice: 'Comment was successfully created.' }
         format.js
       else
-        format.html { redirect_to blog_post_path(@post) }
+        format.html { redirect_to blog_post_path(@post), notice: 'Comment could not be saved!' }
       end
     end
   end

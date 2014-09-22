@@ -1,4 +1,4 @@
-<%= div_for comment do %>
+<%= div_for(comment, class: "well") do %>
   <p>
     <strong>Posted by <%= comment.guest_name %> <%= time_ago_in_words(comment.created_at) %> ago</strong><br />
     <%= h(comment.body) %>

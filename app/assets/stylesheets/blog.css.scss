@@ -11,9 +11,37 @@
   margin-top: 30px;
 }
 
-#posts h1 {
+#individual-post-title h1 {
   padding-bottom: 15px;
   border-bottom: 2px solid black;
+}
+
+#posts h2 a {
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  color: rgba(28,28,28,.5);
+  text-decoration: none;
+}
+
+#posts p {
+  margin-bottom: 20px;
+}
+
+
+#posts h1 {
+  margin-top: -20px;
+}
+
+#posts h1 a {
+ font-family: 'Ubuntu';
+  font-size: 70px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333;
+}
+
+#post_body {
+  background-color: white;
 }
 
 #replies p {
@@ -22,12 +50,24 @@
 }
 
 #comments div {
-  background-color: #e0e0e0;
+  background-color: white;
 }
 
-#comments div p {
-  color: blue;
+#profile-description {
+  font-family: 'Ubuntu';
+  font-size: 16px;
 }
+
+#read-more-link a {
+  color: #ff7878;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#read-more-link {
+  margin-bottom: 100px;
+}
+
 
 
 #new-post {

@@ -4,6 +4,7 @@
 
 #headerwrap {
   background: url("pushkar.jpg") no-repeat center top;
+  -webkit-filter: grayscale(100%);
   margin-top: -20px;
   text-align:center;
   background-attachment: fixed;
@@ -69,34 +70,6 @@
   margin-bottom: 80px;
 }
 
-#homewrap {
-  background: brown;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 955px;
-  margin-top: 100px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#homewrap .well {
-  margin-top: 100px;
-}
-
-#homewrap p {
-  font-size: 20px;
-}
-
 #ottowrap {
   background: white;
   margin-top: -10px;
@@ -154,5 +127,9 @@
 
 #doWhat i {
   font-size: 80px;
+}
+
+#doWhat p {
+  font-size: 22px;
 }
 
