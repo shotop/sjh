@@ -4,7 +4,7 @@
 
 #headerwrap {
   background: url("pushkar.jpg") no-repeat center top;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(60%);
   margin-top: -20px;
   text-align:center;
   background-attachment: fixed;
@@ -27,13 +27,25 @@
   font-family: 'Ubuntu';
   color: white;
   font-size: 120px;
-  margin-top: 590px;
+  margin-top: -10px;
 }
 
 #headerwrap button:hover {
-  color: #ff7878;
+  color: yellow;
 }
 
+#headerwrap .title-group {
+  margin-top: 400px;
+  color: yellow;
+  font-size: 65px;
+  font-family: 'Ubuntu';
+}
+
+#headerwrap .title-group #title-dream {
+  color: white;
+  font-size: 45px;
+  font-family: 'Copperplate';
+}
 
 #aboutwrap {
   background: #e0e0e0;
@@ -68,7 +80,19 @@
 .contact-form {
   margin-top: 60px;
   margin-bottom: 80px;
+  border: 1px solid #244766;
 }
+
+.contact-form button {
+  background-color: #244766;
+  color: #EFFD4F;
+}
+
+.contact-form button:hover {
+  background-color: #244766;
+  color: #EFFD4F;
+}
+
 
 #ottowrap {
   background: white;
@@ -97,6 +121,11 @@
   margin-top: 40px;
 }
 
+#ottowrap iframe {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #doWhat {
   background: #1abc9c;
   text-align:center;
@@ -104,6 +133,7 @@
   background-position: center center;
   min-height: 855px;
   width: 100%;
+  background-color: #ff7878;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
