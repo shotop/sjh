@@ -96,11 +96,12 @@
 
 #ottowrap {
   background: white;
-  margin-top: -10px;
+  padding-top: 100px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 155px;
+  min-height: 285px;
+  padding-bottom: 100px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -150,16 +151,24 @@
   margin-top: 130px;
 }
 
+#greeting {
+  font-size: 65px;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
 #doWhat a {
   font-size: 35px;
   color: white;
+  text-shadow: 1px 1px 1px #000;
 }
 
 #doWhat i {
   font-size: 80px;
 }
 
-#doWhat p {
+#doWhat .col-lg-6 p {
   font-size: 22px;
 }
 
