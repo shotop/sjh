@@ -17,7 +17,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   background-image: none;
-  height: 62px;
+  height: 100px;
   width: 100%;
   border-radius: 0;
   -webkit-transform-style: preserve-3d;
@@ -38,6 +38,11 @@ a {
 .navbar-inverse .navbar-nav > li >a {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   color: white;
+  -webkit-transition: color 1s;
+    -moz-transition:    color 0.5s;
+    -ms-transition:     color 0.5s;
+    -o-transition:      color 0.5s;
+    transition:         color 0.5s;
 }
 
 .navbar-inverse .navbar-nav > li >a:hover {
@@ -61,11 +66,11 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-size: 50px;
-    line-height: 65px;
+    line-height: 30px;
 }
 
 #footer {
-  background: #2d2d2d;
+  background: black;
   padding-top: 30px;
 }
 

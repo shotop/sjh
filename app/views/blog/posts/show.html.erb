@@ -1,14 +1,15 @@
 <div id="post-show">
   <div class="container">
     <div class="row">
-      <div data-spy="affix" data-offset-bottom="200" class="col-sm-2" id="profile-data">
+      <div class="col-lg-2" id="profile-data">
         <img class="img-rounded" src="/assets/samprofilepic.jpeg" width="110" height="120" alt="Sam Image">
+        <p><strong>Linguist, Engineer, <br>Adventurer</strong></p>
       </div>
-      <div class="col-sm-10 pull-right" id="post-content">
+      <div class="col-lg-10 pull-right" id="post-content">
         <div id="individual-post-title">
           <h1 class="text-left"><%= @post.title %></h1>
           <span>By Sam Hotop on <%= @post.created_at.strftime("%D") %>
-            <span class="pull-right"><%= @post.comments.count %> Comments</span>
+            <span class="pull-right"><%= pluralize(@post.comments.count, 'Comment') %></span>
           </span>
           <hr>
           <p class="well" id="post_body">

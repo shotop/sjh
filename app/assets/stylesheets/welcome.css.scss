@@ -85,12 +85,12 @@
 
 .contact-form button {
   background-color: #244766;
-  color: #EFFD4F;
+  color: white;
 }
 
 .contact-form button:hover {
   background-color: #244766;
-  color: #EFFD4F;
+  color: white;
 }
 
 
@@ -148,10 +148,11 @@
 }
 
 #crisscross-content {
-  margin-top: 130px;
+  margin-top: 110px;
 }
 
 #greeting {
+  padding-top: 40px;
   font-size: 65px;
   color: white;
   text-shadow: 2px 2px 2px #000;
