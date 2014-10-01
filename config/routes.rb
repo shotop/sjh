@@ -7,6 +7,8 @@ Sjh::Application.routes.draw do
   get 'projects' => 'projects#index'
   get 'blog' => 'blog/posts#index'
 
+  get 'tags/:tag', to: 'blog/posts#index', as: :categories
+
   resources "contacts", only: [:create]
 
   namespace :blog do

@@ -9,7 +9,8 @@ gem 'pry'
 gem 'chart-js-rails', '~> 0.0.7'
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'acts-as-taggable-on'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

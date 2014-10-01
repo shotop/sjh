@@ -2,45 +2,49 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-2" id="profile-data">
-        <img class="img-rounded" src="/assets/samprofilepic.jpeg" width="110" height="120" alt="Sam Image">
-        <p><strong>Linguist, Engineer, <br>Adventurer</strong></p>
+        <ul class="thumbnails">
+          <div class="thumbnail"
+            <li class="span4">
+              <img class="img-rounded" src="/assets/samprofilepic.jpeg" width="110" height="120" alt="Sam Image">
+            </li>
+            <li class="span4">
+              <p><strong>Linguist, Engineer, <br>Adventurer</strong></p>
+            </li>
+          </div>
+        </ul>
       </div>
       <div class="col-lg-10 pull-right" id="post-content">
-        <div id="individual-post-title">
-          <h1 class="text-left"><%= @post.title %></h1>
-          <span>By Sam Hotop on <%= @post.created_at.strftime("%D") %>
-            <span class="pull-right"><%= pluralize(@post.comments.count, 'Comment') %></span>
-          </span>
-          <hr>
-          <p class="well" id="post_body">
-            <%= @post.body %>
-          </p>
-          <h2>Comments</h2>
-          <div id="comments">
-            <%= render :partial => @post.comments.reverse %>
-          </div>
+        <h1 class="text-center"><%= @post.title %></h1>
+        <h2 class="text-center">Sam wrote this on <%= @post.created_at.strftime("%B %d, %Y") %></h2>
+        <p class="well" id="post_body">
+          <%= @post.body %>
+        </p>
+        <h2 style="color: #ff7878; font-size: 30px;">Comments:</h2>
 
-          <div id="replies">
-            <%= form_for ([:blog, @post, Comment.new]), remote: true do |f| %>
-              <h2>Leave A Reply</h2>
-              <p>Your email address will not be published. Required fields are marked *</p>
-              <br>
-              <br>
-              <p><%= f.label "Enter Name *" %>
-                 <%= f.text_field :guest_name %>
-              </p>
-              <br>
-              <p><%= f.label "Enter Email *" %>
-                 <%= f.text_field :guest_email %>
-              </p>
-              <br>
-              <p><%= f.label "Comment" %>
-                 <%= f.text_area(:body, size: "80x6") %>
-              </p>
-              <br>
-              <p><%= f.submit "Post Comment" %></p>
-            <% end %>
-          </div>
+        <div id="comments">
+          <%= render :partial => @post.comments.reverse %>
+        </div>
+
+        <div id="replies">
+          <%= form_for ([:blog, @post, Comment.new]), remote: true do |f| %>
+            <h2>Leave A Reply</h2>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <br>
+            <br>
+            <p><%= f.label "Enter Name *" %>
+               <%= f.text_field :guest_name %>
+            </p>
+            <br>
+            <p><%= f.label "Enter Email *" %>
+               <%= f.text_field :guest_email %>
+            </p>
+            <br>
+            <p><%= f.label "Comment" %>
+               <%= f.text_area(:body, size: "80x6") %>
+            </p>
+            <br>
+            <p><%= f.submit "Post Comment" %></p>
+          <% end %>
         </div>
       </div>
     </div>

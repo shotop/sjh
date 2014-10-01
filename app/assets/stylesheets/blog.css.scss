@@ -62,12 +62,33 @@
   color: #ff7878;
 }
 
+#post-content h1 {
+  font-family: 'Ubuntu';
+  font-size: 60px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #ff7878;
+}
+
+#post-content h2 {
+  font-size: 25px;
+  color: rgba(28,28,28,.5);
+  text-decoration: none;
+  font-family: 'Vollkorn';
+}
+
 #post_body {
   background-color: white;
 }
 
 .post {
   border-bottom: 1px solid #ddd;
+}
+
+.thumbnail {
+  margin-left: -60px;
+  margin-right: 40px;
+  margin-top: 40px;
 }
 
 #replies p {
