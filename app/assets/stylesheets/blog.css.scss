@@ -5,6 +5,7 @@
 #post-show {
   margin-top: 100px;
   min-height: 800px;
+  background-color: #e0e0e0;
 }
 
 #post-show .row img {
@@ -91,9 +92,10 @@
   margin-top: 40px;
 }
 
-#replies p {
+#replies p label {
   font-family: 'Ubuntu';
-  font-size: 18px;
+  font-size: 28px;
+  padding-right: 20px;
 }
 
 #comments div {
@@ -103,6 +105,10 @@
 #profile-description {
   font-family: 'Ubuntu';
   font-size: 16px;
+}
+
+#profile-data {
+  background-color: #d9edf7;
 }
 
 #read-more-link a {
@@ -120,12 +126,21 @@
 }
 
 #categories h4 {
-  font-size: 45px;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+#categories {
+  margin-top: 20px;
 }
 
 #archives h4 {
-  font-size: 45px;
-  padding-left: 20px;
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+#search-meta-group {
+  margin-top: 200px;
 }
 
 #new-post {

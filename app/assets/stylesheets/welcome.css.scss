@@ -35,13 +35,88 @@
 }
 
 #headerwrap .title-group {
-  margin-top: 400px;
+  margin-top: 395px;
   color: yellow;
   font-size: 65px;
   font-family: 'Ubuntu';
 }
 
-#headerwrap .title-group #title-dream {
+#headerwrap .title-group #title-present {
+  color: white;
+  font-size: 45px;
+  font-family: 'Copperplate';
+}
+
+#vitruvianwrap {
+  background-color: black;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 735px;
+  width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#vitruvianwrap p {
+  color: white;
+  font-size: 45px;
+  font-family: 'Copperplate';
+}
+
+#thesewrap {
+  background-color: blue;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 235px;
+  width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#thesewrap p {
+  color: white;
+  font-size: 165px;
+  font-family: 'Ubuntu';
+}
+
+#bolshevikswrap {
+  background-color: purple;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 735px;
+  width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bolshevikswrap p {
   color: white;
   font-size: 45px;
   font-family: 'Copperplate';
@@ -80,7 +155,6 @@
 .contact-form {
   margin-top: 60px;
   margin-bottom: 80px;
-  border: 1px solid #244766;
 }
 
 .contact-form button {

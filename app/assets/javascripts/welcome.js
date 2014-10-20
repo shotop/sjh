@@ -23,7 +23,7 @@ $(function() {
 
   $("#down_direction_arrow").click(function() {
       $('html, body').animate({
-          scrollTop: $("#aboutwrap").offset().top
+          scrollTop: $("#vitruvianwrap").offset().top
       }, 1000);
   });
 
