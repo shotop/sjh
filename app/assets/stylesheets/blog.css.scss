@@ -5,7 +5,6 @@
 #post-show {
   margin-top: 100px;
   min-height: 800px;
-  background-color: #e0e0e0;
 }
 
 #post-show .row img {
@@ -80,35 +79,46 @@
 
 #post_body {
   background-color: white;
+  font-size: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
 }
 
 .post {
   border-bottom: 1px solid #ddd;
 }
 
-.thumbnail {
-  margin-left: -60px;
-  margin-right: 40px;
-  margin-top: 40px;
+#reply-header h2 {
+  font-family: 'Ubuntu';
+  padding-bottom: 20px;
 }
 
-#replies p label {
-  font-family: 'Ubuntu';
-  font-size: 28px;
-  padding-right: 20px;
+#reply-header p {
+  font-size: 20px;
+}
+
+#reply-header {
+  padding-left: 15px;
+}
+
+#replies {
+  background-color: #C7D0D5;
 }
 
 #comments div {
   background-color: white;
+  font-size: 20px;
 }
 
-#profile-description {
+#comments-header {
+  color: #333;
+  font-size: 30px;
   font-family: 'Ubuntu';
-  font-size: 16px;
+  padding-bottom: 40px;
 }
 
-#profile-data {
-  background-color: #d9edf7;
+#comment-body {
+  margin-top: 20px;
 }
 
 #read-more-link a {

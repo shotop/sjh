@@ -1,4 +1,5 @@
 $(function() {
+  skrollr.init().refresh();
 
   $('.navbar').data('size','big');
 
@@ -19,7 +20,6 @@ $(function() {
           }
       }
   });
-
 
   $("#down_direction_arrow").click(function() {
       $('html, body').animate({

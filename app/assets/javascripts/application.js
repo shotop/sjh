@@ -17,6 +17,7 @@
 //= require_tree
 //= require bootstrap
 //= require Chart
+//= require skrollr
 
 
 

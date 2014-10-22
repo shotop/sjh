@@ -1,49 +1,45 @@
 <div id="post-show">
   <div class="container">
     <div class="row">
-      <div class="col-lg-2" id="profile-data">
-        <ul class="thumbnails">
-          <div class="thumbnail"
-            <li class="span4">
-              <img class="img-rounded" src="/assets/samprofilepic.jpeg" width="110" height="120" alt="Sam Image">
-            </li>
-            <li class="span4">
-              <p><strong>Linguist, Engineer, <br>Adventurer</strong></p>
-            </li>
-          </div>
-        </ul>
-      </div>
       <div class="col-lg-10 pull-right" id="post-content">
         <h1 class="text-center"><%= @post.title %></h1>
         <h2 class="text-center">Sam wrote this on <%= @post.created_at.strftime("%B %d, %Y") %></h2>
         <p class="well" id="post_body">
           <%= @post.body %>
         </p>
-        <h2 style="color: #ff7878; font-size: 30px;">Comments:</h2>
-
+      </div>
+      <div class="col-lg-10 pull-right" id="comment-content">
+        <div id="comments-header">
+          <h2>Comments:</h2>
+        </div>
         <div id="comments">
           <%= render :partial => @post.comments.reverse %>
         </div>
 
-        <div id="replies">
+        <div id="replies" class="col-lg-12 pull-right well">
           <%= form_for ([:blog, @post, Comment.new]), remote: true do |f| %>
-            <h2>Leave A Reply</h2>
-            <p>Your email address will not be published. Required fields are marked *</p>
-            <br>
-            <br>
-            <p><%= f.label "Enter Name *" %>
-               <%= f.text_field :guest_name %>
-            </p>
-            <br>
-            <p><%= f.label "Enter Email *" %>
-               <%= f.text_field :guest_email %>
-            </p>
-            <br>
-            <p><%= f.label "Comment" %>
-               <%= f.text_area(:body, size: "80x6") %>
-            </p>
-            <br>
-            <p><%= f.submit "Post Comment" %></p>
+            <div id="reply-header">
+              <h2>Leave A Comment</h2>
+              <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+            <div class="input-group col-lg-6">
+               <%= f.text_field :guest_name, class: 'form-control', placeholder: "Your Name *" %>
+               <span class="input-group-addon">
+                <i class="fa fa-user"></i>
+               </span>
+            </div>
+            <div class="input-group col-lg-6">
+              <%= f.text_field :guest_email, class: 'form-control', placeholder: "Your Email *" %>
+              <span class="input-group-addon">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <div class="form-group col-lg-12" id="comment-body">
+             <%= f.text_area(:body, class: 'form-control', rows: 10, placeholder: "Your Comment") %>
+            </div>
+            <div class="form-group col-lg-12"
+              <p><%= f.submit "Post Comment", class: 'btn btn-default pull-right'%></p>
+            </div>
           <% end %>
         </div>
       </div>

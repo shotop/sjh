@@ -4,11 +4,12 @@
 
 #headerwrap {
   background: url("pushkar.jpg") no-repeat center top;
-  -webkit-filter: grayscale(60%);
+  -webkit-filter: brightness(125%) grayscale(70%);
   margin-top: -20px;
   text-align:center;
   background-attachment: fixed;
   background-position: center center;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
   min-height: 1055px;
   width: 100%;
 
@@ -31,28 +32,35 @@
 }
 
 #headerwrap button:hover {
-  color: yellow;
+  color: #00DDD8;
+  -webkit-filter: brightness(125%);
 }
 
 #headerwrap .title-group {
   margin-top: 395px;
-  color: yellow;
+  color: white;
+  -webkit-filter: brightness(125%);
   font-size: 65px;
   font-family: 'Ubuntu';
 }
 
 #headerwrap .title-group #title-present {
-  color: white;
-  font-size: 45px;
-  font-family: 'Copperplate';
+  color: #00DDD8;
+  font-size: 75px;
+  font-family: 'Impact';
+}
+
+#title-fade {
+  position: relative;
 }
 
 #vitruvianwrap {
-  background-color: black;
+  background: url("vetruvian.jpg") no-repeat center top;
+  -webkit-filter: invert(80%) brightness(125%);
   text-align:center;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-position: center center;
-  min-height: 735px;
+  min-height: 835px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -66,18 +74,24 @@
     background-size: cover;
 }
 
-#vitruvianwrap p {
-  color: white;
-  font-size: 45px;
-  font-family: 'Copperplate';
+#tale-fade {
+  color: black;
+  padding-top: 25%;
+  font-size: 155px;
+  -webkit-filter: brightness(125%);
+  font-family: 'Impact';
+  font-weight: 900;
+  position: relative;
 }
 
-#thesewrap {
-  background-color: blue;
+#bolshevikwrap {
+  background: white;
+  padding-top: 100px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 235px;
+  min-height: 285px;
+  padding-bottom: 100px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -90,83 +104,6 @@
     -o-background-size: cover;
     background-size: cover;
 }
-
-#thesewrap p {
-  color: white;
-  font-size: 165px;
-  font-family: 'Ubuntu';
-}
-
-#bolshevikswrap {
-  background-color: purple;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 735px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#bolshevikswrap p {
-  color: white;
-  font-size: 45px;
-  font-family: 'Copperplate';
-}
-
-#aboutwrap {
-  background: #e0e0e0;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 735px;
-  width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#aboutwrap #profileInfo {
-  margin-top: 75px;
-}
-
-#aboutwrap p {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
-.contact-form {
-  margin-top: 60px;
-  margin-bottom: 80px;
-}
-
-.contact-form button {
-  background-color: #244766;
-  color: white;
-}
-
-.contact-form button:hover {
-  background-color: #244766;
-  color: white;
-}
-
 
 #ottowrap {
   background: white;
@@ -206,6 +143,7 @@
   text-align:center;
   background-attachment: relative;
   background-position: center center;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
   min-height: 855px;
   width: 100%;
   background-color: #ff7878;
