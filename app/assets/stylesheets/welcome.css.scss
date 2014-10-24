@@ -41,7 +41,7 @@
   color: white;
   -webkit-filter: brightness(125%);
   font-size: 65px;
-  font-family: 'Ubuntu';
+  font-family: 'Impact';
 }
 
 #headerwrap .title-group #title-present {
@@ -84,14 +84,65 @@
   position: relative;
 }
 
+#lorewrap {
+  text-align:center;
+  min-height: 1385px;
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lore-title {
+  font-size: 155px;
+  -webkit-filter: brightness(125%);
+  font-family: 'Impact';
+  font-weight: 900;
+  padding-top: 35%;
+  position: relative;
+}
+
+#adventureswrap {
+  background-color:rgb(0,0,0);
+  text-align:center;
+  min-height: 885px;
+  width: 100%;
+  height: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#adventures-title {
+  font-size: 45px;
+  font-family: 'Impact';
+  font-weight: 900;
+  padding-top: 35%;
+  position: relative;
+}
+
 #bolshevikwrap {
-  background: white;
-  padding-top: 100px;
+  background-color:rgb(255,0,0);
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 285px;
-  padding-bottom: 100px;
+  min-height: 885px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -103,6 +154,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#bolshevik-title {
+  font-size: 45px;
+  font-family: 'RuslanDisplay';
+  font-weight: 900;
+  padding-top: 35%;
+  position: relative;
+  color: black;
 }
 
 #ottowrap {
