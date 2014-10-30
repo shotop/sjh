@@ -46,7 +46,7 @@
 
 #headerwrap .title-group #title-present {
   color: #00DDD8;
-  font-size: 75px;
+  font-size: 95px;
   font-family: 'Impact';
 }
 
@@ -113,8 +113,9 @@
 
 #adventureswrap {
   background-color:rgb(0,0,0);
+  background-attachment:fixed;
   text-align:center;
-  min-height: 885px;
+  min-height: 4685px;
   width: 100%;
   height: 100%;
 
@@ -132,37 +133,90 @@
 #adventures-title {
   font-size: 45px;
   font-family: 'Impact';
+  color: white;
   font-weight: 900;
-  padding-top: 35%;
-  position: relative;
+  width:100%;
+  height:100%;
+  padding-top:10%;
+  text-align:center;
+  position: fixed;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#shotop-title {
+ font-size: 75px;
+  font-family: 'Impact';
+  font-weight: 900;
+  width:100%;
+  height:100%;
+  padding-top:10%;
+  text-align:center;
+  position: fixed;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #bolshevikwrap {
-  background-color:rgb(255,0,0);
+  background: url("lenin-speaking-in-red-square.jpg") no-repeat center top;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 885px;
+  min-height: 985px;
   width: 100%;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    -o-background-size: 80%;
+    background-size: 80%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
-#bolshevik-title {
-  font-size: 45px;
-  font-family: 'RuslanDisplay';
+#bolshevikwrap p {
+  font-size: 85px;
+  font-family: 'propaganda';
   font-weight: 900;
-  padding-top: 35%;
   position: relative;
-  color: black;
+  color: red;
+  text-shadow: 5px 5px black;
+  padding-top: 25%;
+}
+
+#taleswrap {
+  background-color: blue;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 985px;
+  width: 100%;
+
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    -o-background-size: 80%;
+    background-size: 80%;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+
+#tales-title {
+  font-size: 55px;
+  font-family: 'propaganda';
+  font-weight: 900;
+  position: relative;
+  color: orange;
+  padding-top: 30%;
 }
 
 #ottowrap {
