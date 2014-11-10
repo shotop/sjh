@@ -14,9 +14,8 @@
               </div>
               <footer class="post-footer">
                 <div class="post-actions">
-                  <i class="fa fa-comment-o"><%= pluralize(post.comments.count, 'Comment') %></i>
                   <i class="fa fa-share-alt-square"> Share</i>
-                  <p class="pull-right"> Categories: <%= raw post.tag_list.map {|t| link_to t, categories_path(t)}.join(', ') %> </p>
+                  <p class="pull-right"><i class="fa fa-tags"></i> <%= raw post.tag_list.map {|t| link_to t, categories_path(t)}.join(', ') %> </p>
                 </div>
               </footer>
             </div>
@@ -38,7 +37,7 @@
             <div class="col-lg-12">
               <ul class="list-unstyled">
                 <% ActsAsTaggableOn::Tag.all.each do |tag| %>
-                  <li><a href="#"><%= tag.name.capitalize %></a> (<%= tag.taggings_count %>)</li>
+                  <li><%= link_to tag.name.capitalize, categories_path(tag.name) %> (<%= tag.taggings_count %>)</li>
                 <% end %>
               </ul>
             </div>
@@ -47,7 +46,8 @@
         <div class="well" id="archives">
           <h4 class="text-center">Archives</h4>
           <div class="form-group">
-            <%= date_select("post", "written_on", :default => 3.days.from_now) %>
+            <%= date_select("post", "created_at", start_year: 2001, discard_month: true,
+                            discard_day: true) %>
           </div>
         </div>
       </div>

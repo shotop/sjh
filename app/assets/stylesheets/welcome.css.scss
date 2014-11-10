@@ -4,13 +4,13 @@
 
 #headerwrap {
   background: url("pushkar.jpg") no-repeat center top;
-  -webkit-filter: brightness(125%) grayscale(70%);
+  -webkit-filter: brightness(125%) grayscale(80%);
   margin-top: -20px;
   text-align:center;
   background-attachment: fixed;
   background-position: center center;
   box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
-  min-height: 1055px;
+  min-height: 1155px;
   width: 100%;
 
     -webkit-background-size: 100%;
@@ -28,24 +28,28 @@
   font-family: 'Ubuntu';
   color: white;
   font-size: 120px;
-  margin-top: -10px;
 }
 
 #headerwrap button:hover {
-  color: #00DDD8;
+  color: #FFF056;
   -webkit-filter: brightness(125%);
 }
 
 #headerwrap .title-group {
-  margin-top: 395px;
+  margin-top: 355px;
   color: white;
   -webkit-filter: brightness(125%);
   font-size: 65px;
   font-family: 'Impact';
 }
 
+#title-productions {
+  font-family: 'Impact';
+}
+
 #headerwrap .title-group #title-present {
-  color: #00DDD8;
+  color: black;
+  text-shadow: 2px 2px white;
   font-size: 95px;
   font-family: 'Impact';
 }
@@ -87,7 +91,6 @@
 #lorewrap {
   text-align:center;
   min-height: 1385px;
-  background-color: orange;
   width: 100%;
   height: 100%;
 
@@ -109,13 +112,14 @@
   font-weight: 900;
   padding-top: 35%;
   position: relative;
+  color: black;
 }
 
 #adventureswrap {
   background-color:rgb(0,0,0);
   background-attachment:fixed;
   text-align:center;
-  min-height: 4685px;
+  min-height: 4885px;
   width: 100%;
   height: 100%;
 
@@ -131,7 +135,7 @@
 }
 
 #adventures-title {
-  font-size: 45px;
+  font-size: 65px;
   font-family: 'Impact';
   color: white;
   font-weight: 900;
@@ -147,7 +151,7 @@
 }
 
 #shotop-title {
- font-size: 75px;
+ font-size: 115px;
   font-family: 'Impact';
   font-weight: 900;
   width:100%;
@@ -155,10 +159,7 @@
   padding-top:10%;
   text-align:center;
   position: fixed;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  color: #ff7878;
 }
 
 #bolshevikwrap {
@@ -166,8 +167,9 @@
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 985px;
+  min-height: 1285px;
   width: 100%;
+  position: relative;
 
     -webkit-background-size: 80%;
     -moz-background-size: 80%;
@@ -181,22 +183,21 @@
 }
 
 #bolshevikwrap p {
-  font-size: 85px;
+  font-size: 105px;
   font-family: 'propaganda';
   font-weight: 900;
   position: relative;
-  color: red;
-  text-shadow: 5px 5px black;
-  padding-top: 25%;
+  color: white;
+  text-shadow: 5px 5px red;
+  padding-top: 35%;
 }
 
 #taleswrap {
-  background-color: blue;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 985px;
   width: 100%;
+  min-height: 1000px;
 
     -webkit-background-size: 80%;
     -moz-background-size: 80%;
@@ -212,11 +213,10 @@
 
 #tales-title {
   font-size: 55px;
-  font-family: 'propaganda';
-  font-weight: 900;
+  font-family: 'Impact';
   position: relative;
-  color: orange;
-  padding-top: 30%;
+  color: #333;
+  padding-top: 35%;
 }
 
 #ottowrap {
@@ -252,50 +252,9 @@
   margin-right: 20px;
 }
 
-#doWhat {
-  background: #1abc9c;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
-  min-height: 855px;
-  width: 100%;
-  background-color: #ff7878;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#crisscross-content {
-  margin-top: 110px;
-}
-
-#greeting {
-  padding-top: 40px;
-  font-size: 65px;
-  color: white;
-  text-shadow: 2px 2px 2px #000;
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-}
-
-#doWhat a {
-  font-size: 35px;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-}
-
-#doWhat i {
-  font-size: 80px;
-}
-
-#doWhat .col-lg-6 p {
-  font-size: 22px;
+#enter {
+  padding-top: 20%;
+  padding-left: 40%;
+  padding-right: 40%;
 }
 

@@ -1,6 +1,12 @@
 <div id="post-show">
   <div class="container">
     <div class="row">
+      <div class="col-lg-2 pull-left well" id="post-meta-data">
+        <h1>Discover posts on similar topics</h1>
+        <ul class="list-unstyled">
+          <%= raw @post.tag_list.map {|t| link_to t, categories_path(t)}.join(', ') %>
+        </ul>
+      </div>
       <div class="col-lg-10 pull-right" id="post-content">
         <h1 class="text-center"><%= @post.title %></h1>
         <h2 class="text-center">Sam wrote this on <%= @post.created_at.strftime("%B %d, %Y") %></h2>
