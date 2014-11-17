@@ -8,7 +8,7 @@
           </div>
         </div>
         <button type="button" class="btn btn-link" id="down_direction_arrow">
-          <i class="fa fa-angle-double-down"></i>
+          <i class="fa fa-arrow-circle-o-down"></i>
         </button>
       </div>
     </div>
@@ -38,11 +38,11 @@
   </div>
 
   <div id="taleswrap">
-    <div id="tales-title" data-8149="opacity:0;bottom:100%;" data-8295="opacity:1;bottom:0%;">
+    <div id="tales-title" data-8249="opacity:0;bottom:100%;" data-8455="opacity:1;bottom:0%;">
         <p>..and other contemporary tales</p>
     </div>
     <div id="enter">
-      <button class="btn btn-large btn-block btn-primary">Enter Here</button>
+      <%= button_to "Enter", about_path, :method => "get", :class => "btn btn-large btn-block btn-primary" %>
     </div>
   </div>
 

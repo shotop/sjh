@@ -4,7 +4,7 @@
 
 #headerwrap {
   background: url("pushkar.jpg") no-repeat center top;
-  -webkit-filter: brightness(125%) grayscale(80%);
+  -webkit-filter: brightness(115%);
   margin-top: -20px;
   text-align:center;
   background-attachment: fixed;
@@ -31,14 +31,12 @@
 }
 
 #headerwrap button:hover {
-  color: #FFF056;
-  -webkit-filter: brightness(125%);
+  color: #F7FAFC;
 }
 
 #headerwrap .title-group {
-  margin-top: 355px;
+  margin-top: 300px;
   color: white;
-  -webkit-filter: brightness(125%);
   font-size: 65px;
   font-family: 'Impact';
 }
@@ -48,8 +46,7 @@
 }
 
 #headerwrap .title-group #title-present {
-  color: black;
-  text-shadow: 2px 2px white;
+  color: #ff7878;
   font-size: 95px;
   font-family: 'Impact';
 }
@@ -197,7 +194,7 @@
   background-attachment: relative;
   background-position: center center;
   width: 100%;
-  min-height: 1000px;
+  min-height: 2000px;
 
     -webkit-background-size: 80%;
     -moz-background-size: 80%;
@@ -216,7 +213,7 @@
   font-family: 'Impact';
   position: relative;
   color: #333;
-  padding-top: 35%;
+  padding-top: 45%;
 }
 
 #ottowrap {
@@ -253,8 +250,8 @@
 }
 
 #enter {
-  padding-top: 20%;
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-top: 90%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
