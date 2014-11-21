@@ -6,5 +6,11 @@ class Post < ActiveRecord::Base
 
   validate :body, :presence=>true
 
-  has_many :comments, :dependent=>:destroy
+  def previous_post
+    self.class.first(:conditions => ["created_at < ?", created_at], :order => "created_at desc")
+  end
+
+  def next_post
+    self.class.first(:conditions => ["created_at > ?", created_at], :order => "created_at asc")
+  end
 end

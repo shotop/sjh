@@ -13,7 +13,6 @@ Sjh::Application.routes.draw do
 
   namespace :blog do
     resources :posts do
-      resources :comments
     end
   end
 end
