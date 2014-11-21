@@ -3,12 +3,10 @@
       <div class="row centered">
         <div class="title-group">
           <p id="title-productions">shotop productions</p>
-          <div id="title-fade"data-0="opacity:0;right:100%;" data-120="opacity:1;right:0%;">
-            <p id="title-present">Presents</p>
-          </div>
+          <p id="title-present">Presents</p>
         </div>
         <button type="button" class="btn btn-link" id="down_direction_arrow">
-          <i class="fa fa-arrow-circle-o-down"></i>
+          <i class="fa fa-angle-double-down"></i>
         </button>
       </div>
     </div>
@@ -26,10 +24,13 @@
 
   <div id="adventureswrap">
     <div id="adventures-title" data-2600="top:100%;" data-2700="top:0%;" data-3800="display:block;" data-5700="" data-5850="top:-100%;display:none;">
+      <p>
+        <i class="fa fa-umbrella"></i>
+      </p>
       <p>These are the Extraordinary Adventures</p>
     </div>
     <div id="shotop-title" data-4550="top:100%;" data-4750="top:10%;" data-3800="display:block;" data-5700="" data-5850="top:-100%;display:none;">
-      <p style="color: white;">of</p><p> Mr. Shotop</p>
+      <p style="color: white; font-size: 45px;">of</p><p> Mr. Shotop</p>
     </div>
   </div>
 
@@ -42,7 +43,7 @@
         <p>..and other contemporary tales</p>
     </div>
     <div id="enter">
-      <%= button_to "Enter", about_path, :method => "get", :class => "btn btn-large btn-block btn-primary" %>
+      <%= button_to "Learn More", about_path, :method => "get", :class => "btn btn-large btn-primary" %>
     </div>
   </div>
 
