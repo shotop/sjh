@@ -1,3 +1,5 @@
+  <%= javascript_include_tag "welcome.js" %>
+
   <div id="headerwrap">
     <div class="container">
       <div class="row centered">
@@ -25,7 +27,7 @@
   <div id="adventureswrap">
     <div id="adventures-title" data-2600="top:100%;" data-2700="top:0%;" data-3800="display:block;" data-5700="" data-5850="top:-100%;display:none;">
       <p>
-        <i class="fa fa-umbrella"></i>
+        <i class="fa fa-umbrella" style="color: #1abc9c;"></i>
       </p>
       <p>These are the Extraordinary Adventures</p>
     </div>
@@ -39,11 +41,11 @@
   </div>
 
   <div id="taleswrap">
-    <div id="tales-title" data-8249="opacity:0;bottom:100%;" data-8455="opacity:1;bottom:0%;">
+    <div id="tales-title" data-8149="opacity:0;bottom:100%;" data-8355="opacity:1;bottom:0%;">
         <p>..and other contemporary tales</p>
     </div>
     <div id="enter">
-      <%= button_to "Learn More", about_path, :method => "get", :class => "btn btn-large btn-primary" %>
+      <%= button_to "Learn More", about_path, :method => "get", :class => "btn btn-large btn-primary btn-block" %>
     </div>
   </div>
 

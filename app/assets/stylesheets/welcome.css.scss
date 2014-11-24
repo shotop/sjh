@@ -209,8 +209,7 @@
   font-size: 55px;
   font-family: 'Impact';
   position: relative;
-  color: #333;
-  padding-top: 45%;
+  padding-top: 25%;
 }
 
 #ottowrap {
@@ -247,8 +246,13 @@
 }
 
 #enter {
-  padding-top: 20%;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-top: 2%;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom: 20%;
+}
+
+#enter .btn {
+  background-color: #1abc9c;
 }
 

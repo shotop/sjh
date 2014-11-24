@@ -14,8 +14,8 @@
               </div>
               <footer class="post-footer">
                 <div class="post-actions">
-                  <i class="fa fa-share-alt-square"> Share</i>
-                  <p class="pull-right"><i class="fa fa-tags"></i> <%= raw post.tag_list.map {|t| link_to t, categories_path(t)}.join(', ') %> </p>
+                  <p class="pull-left"><i class="fa fa-tags"></i> <%= raw post.tag_list.map {|t| link_to t, categories_path(t)}.join(', ') %> </p>
+                  <i class="fa fa-share-alt-square pull-right"> Share</i>
                 </div>
               </footer>
             </div>
