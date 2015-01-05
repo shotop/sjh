@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926165618) do
+ActiveRecord::Schema.define(version: 20141126001907) do
 
   create_table "comments", force: true do |t|
     t.integer  "post_id"
@@ -48,5 +48,14 @@ ActiveRecord::Schema.define(version: 20140926165618) do
   end
 
   add_index "tags", ["name"], name: "index_tags_on_name", unique: true
+
+  create_table "translations", force: true do |t|
+    t.string   "eng_title"
+    t.string   "rus_title"
+    t.text     "eng_body"
+    t.text     "rus_body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

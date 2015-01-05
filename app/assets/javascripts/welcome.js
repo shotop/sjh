@@ -1,6 +1,4 @@
 $(function() {
-  skrollr.init().refresh();
-
   $('.navbar').data('size','big');
 
 
@@ -30,4 +28,6 @@ $(function() {
   $("#down_direction_arrow").mouseup(function(){
       $(this).blur();
   });
+
+  skrollr.init().refresh();
 });

@@ -9,6 +9,12 @@
       <div class"col-lg-6">
         <h1>English</h1>
       </div>
+      <% @translations.each do |translation| %>
+        <p><%= translation.eng_title %></p>
+        <p><%= translation.rus_title %></p>
+        <p><%= translation.eng_body %></p>
+        <p><%= translation.rus_body %></p>
+      <% end %>
     </div>
   </div>
 </div>
